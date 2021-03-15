@@ -1,0 +1,30 @@
+{
+  "name": "boilerplatewebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --parallel --exit --require esm tests/",
+    "test:dev": "npx mocha --require esm tests/ -w",
+    "dev": "webpack -w",
+    "build": "webpack build"
+  },
+  "keywords": [],
+  "author": "Gustavinho crei crei",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "chai": "^4.3.4",
+    "esm": "^3.2.25",
+    "mocha": "^8.3.2",
+    "webpack": "^5.25.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "css-loader": "^5.1.2",
+    "style-loader": "^2.0.0"
+  }
+}
